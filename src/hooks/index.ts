@@ -1,0 +1,6 @@
+export * from './useGetProducts'
+export * from './useGetProductById'
+export * from './useGetProductColorById'
+export * from './useGetSizes'
+export * from './DetailsPage'
+export * from './/useGetSizeById'
