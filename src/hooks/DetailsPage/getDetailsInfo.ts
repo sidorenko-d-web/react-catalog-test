@@ -5,6 +5,7 @@ import { useGetProductColorById } from '../useGetProductColorById';
 import { useGetSizes } from '../useGetSizes';
 import { useCartItemStore } from '../../store';
 import { compareCartItem } from '../../helpers';
+import { AppRoutes } from '../../appRouter';
 
 export const getDetailsInfo = () => {
   const { id } = useParams();
@@ -31,7 +32,7 @@ export const getDetailsInfo = () => {
     setSelectedImage(colorData.images[0]);
   }, [colorData?.id, colorData?.name]);
 
-  if (itemError || colorError || sizesError) navigate('/404');
+  if (itemError || colorError || sizesError) navigate(AppRoutes.NotFound);
 
   const isPending = isItemPending || colorIsPending || sizesIsPending;
 
