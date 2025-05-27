@@ -12,7 +12,7 @@
 ## App functionlality
 1. Catalog page shows all Items we colud buy
 2. Details of the an item shows if we click on it
-3. On Details page we can choose between sizes and colors also there is Carousel of images with selected Item
+3. On Details page we can choose between sizes and colors also there is Carousel with images of selected Item
 4. On Details page we can add Item with selected parameters to the cart
 5. Cart page shows all added Items and provides abbolity to remove them from cart
 
