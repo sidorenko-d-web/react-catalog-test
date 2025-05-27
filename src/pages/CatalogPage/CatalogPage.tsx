@@ -4,8 +4,6 @@ import { useGetProducts } from '../../hooks';
 export const CatalogPage = () => {
   const { data } = useGetProducts();
 
-  console.log(data);
-
   if (!data) return <h1>No Data Found</h1>;
 
   return (
