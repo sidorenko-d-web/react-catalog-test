@@ -1,54 +1,30 @@
-# React + TypeScript + Vite
+# T-Shirt Catalog with ReactJS
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Used technologies
+1. React.JS
+2. TypeScript
+3. React-Router
+4. Vite
+5. Zustand
+6. Tanstack/React-query
+7. Tailwind CSS + clsx
 
-Currently, two official plugins are available:
+## App functionlality
+1. Catalog page shows all Items we colud buy
+2. Details of the an item shows if we click on it
+3. On Details page we can choose between sizes and colors also there is Carousel of images with selected Item
+4. On Details page we can add Item with selected parameters to the cart
+5. Cart page shows all added Items and provides abbolity to remove them from cart
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## How to start app
 
-## Expanding the ESLint configuration
+Step 1: Clone this repository  
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+Step 2: open console in directory of cloned repository
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+Step 3: Write down commands into console
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+    $ npm i
+    $ npm run dev
+    
+Step 4: You will have an access to the App at ``http:localhost:5173``  
